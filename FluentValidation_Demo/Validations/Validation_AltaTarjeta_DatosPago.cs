@@ -5,7 +5,7 @@ using System;
 namespace FluentValidation_Demo.Validations
 {
     public class Validation_AltaTarjeta_DatosPago : AbstractValidator<AltaTarjeta>
-    {
+    { // En caso Alta Tarjeta herede de una clase Padre, entonces para agregar sus validaciones de la clase pase  debemos agregar Include(new BaseValidator())
         public Validation_AltaTarjeta_DatosPago()
         {
             RuleFor(r => r.TipoTarjeta)
